@@ -28,9 +28,30 @@ else:
 
 
 searches = {
-#    "CEP": "CONFNAME(Computing Education Practice)",
+    "CEP": "CONFNAME(Computing Education Practice)",
     "Koli": 'CONF ( "Koli" ) AND AFFILCOUNTRY ( "United kingdom" )  AND ( PUBYEAR > 2018 )'
 }
+
+#  "85219189082" is a CEP poster, no abstract
+
+uri_excludes = [
+
+    "85123040964",  # full proceedings listings for CEP
+    "85219170733",
+    "85182755414",
+    "85145836845",
+    "85122628388",
+    "85099461088",
+    "85123042521"
+]
+
+
+def uri_excluded(fname):
+    for uri_exclude in uri_excludes:
+        if uri_exclude in fname:
+            return True
+    return False
+
 ## Initialize doc search object using Scopus and execute search, retrieving 
 #   all results
 for source in searches:
@@ -41,8 +62,11 @@ for source in searches:
     doc_uris = []
     for doc in doc_srch.results:
         doc_uri = doc["prism:url"]
-        doc_uris.append(doc_uri)
+        if(uri_excluded(doc_uri)):
+            print ("Excluding " + doc_uri + " from " + source)
+            continue
         scp_doc = AbsDoc(uri = doc_uri)
+        doc_uris.append(doc_uri)
         if scp_doc.read(client):
             print ("scp_doc.title: ", scp_doc.title)
             scp_doc.write()   
