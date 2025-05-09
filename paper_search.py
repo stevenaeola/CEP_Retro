@@ -5,7 +5,15 @@ from elsapy.elsprofile import ElsAuthor, ElsAffil
 from elsapy.elsdoc import FullDoc, AbsDoc
 from elsapy.elssearch import ElsSearch
 import json
-    
+
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("conference")
+args = parser.parse_args()
+
+conference = args.conference
+
+
 ## Load configuration
 con_file = open("config.json")
 config = json.load(con_file)
@@ -15,22 +23,14 @@ con_file.close()
 client = ElsClient(config['apikey'])
 #client.inst_token = config['insttoken']
 
-## Author example
-# Initialize author with uri
-my_auth = ElsAuthor(
-        uri = 'https://api.elsevier.com/content/author/author_id/7203071981')
-# Read author data, then write to disk
-if my_auth.read(client):
-    print ("my_auth.full_name: ", my_auth.full_name)
-    my_auth.write()
-else:
-    print ("Read author failed.")
-
 
 searches = {
     "CEP": "CONFNAME(Computing Education Practice)",
     "Koli": 'CONF ( "Koli" ) AND AFFILCOUNTRY ( "United kingdom" )  AND ( PUBYEAR > 2018 )'
 }
+
+if not (conference in searches):
+    raise Exception("unknown conference " + conference)
 
 #  "85219189082" is a CEP poster, no abstract
 
