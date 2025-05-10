@@ -26,7 +26,11 @@ client = ElsClient(config['apikey'])
 
 searches = {
     "CEP": "CONFNAME(Computing Education Practice)",
-    "Koli": 'CONF ( "Koli" ) AND AFFILCOUNTRY ( "United kingdom" )  AND ( PUBYEAR > 2018 )'
+    "Koli": 'CONF ( "Koli" ) AND AFFILCOUNTRY ( "United kingdom" )  AND ( PUBYEAR > 2018 )',
+    "UKICER": 'CONF ( "UKICER" ) AND AFFILCOUNTRY ( "United kingdom" )',
+    "ITiCSE": 'CONF ( "iticse" ) AND AFFILCOUNTRY ( "United kingdom" ) AND ( PUBYEAR > 2018 )',
+    "ICER": 'CONF ( "icer" ) AND AFFILCOUNTRY ( "United kingdom" ) AND ( PUBYEAR > 2018 )'
+
 }
 
 if not (conference in searches):
@@ -74,7 +78,7 @@ for source in searches:
             print ("Read document failed.")
 
     with open(source+'_papers.json', 'w') as fp:
-        json.dump(doc_uris, fp)
+        json.dump(doc_uris, fp, indent=2)
 
 
 
