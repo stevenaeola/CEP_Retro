@@ -1,19 +1,5 @@
 [
     {
-        "time": "",
-        "authors": [
-            {
-                "firstName": "Karen",
-                "lastName": "Hunsdale",
-                "email": "",
-                "department": "",
-                "institution": "University of Winchester\t"
-            }
-        ],
-        "title": "Intelligent Agents for Education",
-        "abstract": "The use of CAs can be applied to educational settings to better support teaching and learning and alternative learning environments. Computing underpins almost all areas of the modern world and many new opportunities in science and engineering could not have been realized without it. Thus, computer scientists have the potential to revolutionize societies, develop economic wealth and change people\u2019s lives. Employers needs to ensure that its future generations have the skills that employers require, which is only achieved through effective teaching and learning practices at our schools. If we do not engage at this level, we are unlikely to produce the number of computer scientists required to satisfy the demands of industry. Teachers need support from the science community and industry to increase the number of students leaving school confident in coding, algorithmic thinking and computer science.\n\nArtificial intelligence within teaching and learning is an opportunity to seek novel ways to deliver curriculum content. This may come in the form of conversational agents or learning companions using adaptive learning methodologies. Like an imaginary friend, learning companions can accompany students \u2014 asking questions, providing encouragement, offering suggestions and connections to resources, and help talk through difficulties. Over time, the companion would 'learn' what you know, what interests you, and what kind of learner you are. Such research would raise ethical questions to the use of AI applications alongside human educators; however it is a challenge that will impact profoundly on the nature of teaching and learning? There is enormous potential for such research that remains unrealised along with its associated benefits. AI will empower teachers which will better inform them on how to manage the learning of their students.\n\nThe use of AI agents using natural language dialogue may provide a means to support different types of conversations and thus learning styles. The premise for such agents is to guide students through the questioning process as opposed to simply proving an answer. Students will gain independence by answering questions for themselves through appropriate dialogue."
-    },
-    {
         "time": "1a",
         "authors": [
             {
@@ -45,6 +31,20 @@
         ],
         "title": "Including IT service management in the Computing curriculum: a caricature approach.\n",
         "abstract": "IT service management (itSM) is as important to the IT profession as is project management, which has long been recognised as an enabling skill for computing graduates. Both contribute to meeting accreditation criteria, and play into the employability agenda. itSM is prominent both in the SFIA framework and in the BCS Breadth of Knowledge test for CITP. Yet, unlike project management, itSM is integrated into only a handful of undergraduate computing degree programmes.\n\nThe principal challenge arises from the pedagogies and expectations of certification schemes and training courses being fundamentally different from those of higher education. itSM training courses seek to help participants engage with and enhance an existing service oriented working environment. For HE, the objective is to develop a deep understanding of the value and fundamental importance of itSM within the broad context of computing, and on understanding the reasons and justifications for effective itSM. The pedagogy needs also to encourage students to understand the risks of ignoring itSM \u2013 as with the risks of ignoring project management or the principles of software engineering.\nWe present some challenges and questions encountered during the Open University\u2019s development of itSM distance learning material for undergraduate Computing students. In a distance learning environment, the distinctions in objectives and pedagogy between certification and higher education are exacerbated by the limited opportunities for face-to-face discussions. Furthermore, the student body is disparate: some work in the sector, some are school-leavers with no work experience, and others work in completely different sectors.\n\nWe present our solution to these challenges: a \u201ccaricature\u201d pedagogy that emphasises the intended outcomes and benefits of IT service management, rather than its nomenclature, based on the classic ITIL service lifecycle. Our experience, including student reaction, suggests that this approach could enable the wider adoption of itSM teaching in university computing courses."
+    },
+    {
+        "time": "1c",
+        "authors": [
+            {
+                "firstName": "Karen",
+                "lastName": "Hunsdale",
+                "email": "",
+                "department": "",
+                "institution": "University of Winchester\t"
+            }
+        ],
+        "title": "Intelligent Agents for Education",
+        "abstract": "The use of CAs can be applied to educational settings to better support teaching and learning and alternative learning environments. Computing underpins almost all areas of the modern world and many new opportunities in science and engineering could not have been realized without it. Thus, computer scientists have the potential to revolutionize societies, develop economic wealth and change people\u2019s lives. Employers needs to ensure that its future generations have the skills that employers require, which is only achieved through effective teaching and learning practices at our schools. If we do not engage at this level, we are unlikely to produce the number of computer scientists required to satisfy the demands of industry. Teachers need support from the science community and industry to increase the number of students leaving school confident in coding, algorithmic thinking and computer science.\n\nArtificial intelligence within teaching and learning is an opportunity to seek novel ways to deliver curriculum content. This may come in the form of conversational agents or learning companions using adaptive learning methodologies. Like an imaginary friend, learning companions can accompany students \u2014 asking questions, providing encouragement, offering suggestions and connections to resources, and help talk through difficulties. Over time, the companion would 'learn' what you know, what interests you, and what kind of learner you are. Such research would raise ethical questions to the use of AI applications alongside human educators; however it is a challenge that will impact profoundly on the nature of teaching and learning? There is enormous potential for such research that remains unrealised along with its associated benefits. AI will empower teachers which will better inform them on how to manage the learning of their students.\n\nThe use of AI agents using natural language dialogue may provide a means to support different types of conversations and thus learning styles. The premise for such agents is to guide students through the questioning process as opposed to simply proving an answer. Students will gain independence by answering questions for themselves through appropriate dialogue."
     },
     {
         "time": "2a",

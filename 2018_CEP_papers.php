@@ -51,7 +51,7 @@ We present our solution to these challenges: a “caricature” pedagogy that em
     ),
     
     array(
-        'time' => '',
+        'time' => '1c',
         'authors' => array(
             array('firstName' => 'Karen',
             'lastName' => 'Hunsdale',
@@ -511,4 +511,15 @@ $jsonString = json_encode($papers, JSON_PRETTY_PRINT);
 $fp = fopen("2018_CEP_papers.json", 'w');
 fwrite($fp, $jsonString);
 fclose($fp);
+
+$fp2 = fopen("2018_CEP_paper_identifiers.txt" , 'w');
+
+print ("<html><body>");
+foreach ($papers as $paper){
+    print ("<h2> $paper[time] $paper[title]</h2>\n");
+    print ("<p>$paper[abstract]</p>\n\n");
+    fwrite($fp2, "2018_$paper[time]\n");
+}
+print ("</body></html>");
+fclose($fp2);
 ?>
