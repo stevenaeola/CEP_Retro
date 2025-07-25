@@ -1,3 +1,5 @@
+.DS_Store
+
 # config file used by elsapy with Elsevier ID
 config.json
 
