@@ -391,18 +391,20 @@ Our approach has been to develop a strategic approach to competitions and outrea
     array(
         'time' => '6b',
         'authors' => array(
-            array('firstName' => '',
-            'lastName' => '',
+            array('firstName' => 'Rob',
+            'lastName' => 'Powell',
             'email' => '',
-            'department' => '',
-//        'institution' => ''
-            ),
+            'department' => 'Computer Science',
+        'institution' => 'Durham University'
+            )
+/*            ,
             array('firstName' => '',
             'lastName' => '',
             'email' => '',
             'department' => '',
         'institution' => ''
             ),
+            */
 ),
         'title' => 'Widening Participation - \'Stretching the Middle\'',
         'abstract' => "Conducting meaningful outreach activity in order to widen participation in higher education is a constant challenge for all universities, perhaps particularly so for Russell group institutions where the maintenance of elite academic standards can seemingly run counter to enabling 'fairer' access to degree courses.

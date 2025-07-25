@@ -324,17 +324,11 @@
         "time": "6b",
         "authors": [
             {
-                "firstName": "",
-                "lastName": "",
+                "firstName": "Rob",
+                "lastName": "Powell",
                 "email": "",
-                "department": ""
-            },
-            {
-                "firstName": "",
-                "lastName": "",
-                "email": "",
-                "department": "",
-                "institution": ""
+                "department": "Computer Science",
+                "institution": "Durham University"
             }
         ],
         "title": "Widening Participation - 'Stretching the Middle'",
